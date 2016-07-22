@@ -1,5 +1,6 @@
 const path = require('path')
 const webpack = require('webpack')
+const projectRoot = path.resolve(__dirname, '../')
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -11,12 +12,27 @@ module.exports = {
         filename: 'build.js'
     },
     resolve: {
-        extensions: ['', '.js', '.vue']
+        extensions: ['', '.js', '.vue'],
+        alias: {
+            'client': path.resolve(__dirname, '../client'),
+            'components': path.resolve(__dirname, '../clients/components')
+        }
     },
     resolveLoader: {
         root: path.join(__dirname, 'node_modules'),
     },
     module: {
+        preLoaders: [{
+            test: /\.vue$/,
+            loader: 'eslint',
+            include: projectRoot,
+            exclude: /node_modules/
+        }, {
+            test: /\.js$/,
+            loader: 'eslint',
+            include: projectRoot,
+            exclude: /node_modules/
+        }],
         loaders: [{
             test: /\.vue$/,
             loader: 'vue'
