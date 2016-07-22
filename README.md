@@ -1,6 +1,6 @@
 # hapi-vue-plus
 
-> A prototyping setup utilising Vue.js (Webpack HMR + Vue loader) and Hapi (Nodemon) running with Gulp and BrowserSync.
+> A prototyping setup utilising Vue.js (Webpack HMR + Vue loader) and Hapi (Nodemon) running with Gulp and BrowserSync. Plus version, which extends [hapi-vue-simple](https://github.com/Belar/hapi-vue-simple), includes linting (ESlint).
 
 ## Mini-doc
 
