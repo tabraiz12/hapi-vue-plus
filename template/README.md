@@ -4,12 +4,13 @@
 
 ## Mini-doc
 
-**/build/** - contains files needed for build and hot development  
+**/build/** - Contains files needed for build and hot development  
 **/build/index_dev.html** - Template for index.html, it will be used by HMR when developing in memory and during production build   
 **/client/** - Vue.js app source  
 **/config/** - Configuration files  
 **/public/** - Public folder served by Hapi  
 **/server/** - Server side logic  
+**/test/** -   Contains test files  
 **/app.js**  - Production server
 **/gulpfile.js**  - Gulp setup file  
 
@@ -20,6 +21,9 @@ Hapi (API) folders (e.g. routes, controllers, models, plug-ins) can be added eit
 ``` bash
 # install dependencies
 npm install
+
+# run unit tests
+npm run unit
 
 # serve with hot reload at localhost:3000 (with proxy at localhost:4000)
 npm run dev
