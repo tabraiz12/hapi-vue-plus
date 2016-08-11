@@ -62,6 +62,17 @@ server.register([Inert], function (err) {
         }
     });
 
+    // Example api call
+    server.route({
+      method: 'GET',
+      path: '/api/call',
+      handler: function (request, reply) {
+        reply({
+          message: 'Hello!'
+        })
+      }
+    });
+
     server.route({
         method: 'GET',
         path: '/',
