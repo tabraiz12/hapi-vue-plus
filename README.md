@@ -39,6 +39,8 @@ npm run unit
 npm run dev
 ```
 
+For tips and guides regarding integration of additional mechanisms, visit [Hapi Vue Plus wiki](https://github.com/Belar/hapi-vue-plus/wiki).
+
 ## Production Setup
 
 ``` bash
