@@ -15,18 +15,18 @@
         // preserves its current state and we are modifying
         // its initial state.
         msg: 'Welcome!',
-        api: ''
+        api: '',
+        error: {}
       }
     },
     methods: {
       helloCall: function() {
-        this.$http({
-          url: '/api/call',
-          method: 'GET'
-        }).then(function(response) {
-          this.$set('api', response.data.message)
-        }, function(response) {
-          return false
+        this.$http.get({
+          url: '/api/call'
+        }).then((response) => {
+          this.api = response.data.message
+        }, (response) => {
+          this.error = response.data
         })
       }
     }
