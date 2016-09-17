@@ -14,7 +14,8 @@
     "babel-runtime": "^6.9.2",
     "hapi": "^13.4.1",
     "inert": "^4.0.0",
-    "vue": "^1.0.24"
+    "vue": "^1.0.24",
+    "vue-resource": "^0.8.0",
   },
   "devDependencies": {
     "babel-core": "^6.9.1",
@@ -35,7 +36,6 @@
     "vue-hot-reload-api": "^1.2.0",
     "vue-html-loader": "^1.2.2",
     "vue-loader": "^8.5.2",
-    "vue-resource": "^0.8.0",
     "vue-style-loader": "^1.0.0",
     "webpack": "^1.13.1",
     "webpack-dev-server": "^1.14.1",
