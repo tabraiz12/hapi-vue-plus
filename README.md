@@ -1,3 +1,5 @@
+IMPORTANT: This package is based on Vue 1, and in maintenance-only mode (bugs and fixes). For Vue 2, check [Hapi Vue](https://github.com/Belar/hapi-vue).
+
 # hapi-vue-plus
 
 > A prototyping setup utilising Vue.js (Webpack HMR + Vue loader) and Hapi (Nodemon) running with Gulp and BrowserSync. Plus version, which extends [hapi-vue-simple](https://github.com/Belar/hapi-vue-simple), includes linting (ESlint) and unit testing (Karma, Mocha, Chai, Sinon).
